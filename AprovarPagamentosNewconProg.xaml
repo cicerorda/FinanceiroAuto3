@@ -1,0 +1,213 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="AprovarPagamentosNewconProg" sap:VirtualizedContainerService.HintSize="1240,3171" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Exchange.WebServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="752,3106" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="690,2995" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Solicitação de Outros Pagamentos - 24/10/2023  11:33:19" sap:VirtualizedContainerService.HintSize="628,566" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="c8856262-896b-4627-9d2a-dffd53b086be" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,273" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c8856262-896b-4627-9d2a-dffd53b086be" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="775, 1, 34, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="90ecc723-73d1-4e7b-9bb7-acc1e27d52a5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACYAAAAcCAYAAAAN3M1lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACLSURBVFhH7dRhCoAgDIZh738DyRN4Nf94g8UHCkImbSyYtRfEwqAHGoWcM1lavdB2EzmMm8O4OYybGizGSKWUdncNZ3jmaWowvPhIaYpbnd2l+ilnAAkKqc/YCJGi0CvD30FSFPoPrKOwj9fcvj/8K4AEpwYz+4PVzmHcHMbNYdz2gNVaycraAEZ0Aig8JlqN9VJrAAAAAElFTkSuQmCC" InformativeScreenshot="41450addbc9597c6c49f584b98249e21.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcOutrosPagamentos' title='Solicitação de Outros Pagamentos - 24/10/2023  11:33:19' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Newcon4_Funcional\cnp3.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANdSURBVFhHvZdLSBVRGMfz+tZKJYTCqBYZCS16aBAUWGTaJgrcCFFhcKlNbSIIghZdqE2baBFuClxEQRGZYERQ0AOsKHtIiwqCoJdKRWUP037/mW+8c++dmXsRb3/4cc/5vu/M/M/MmTlzZ2QoniiDPrjzH+izs/oUT1TAMEz8B0bsrD4lDYzBRejKA70wDpEGRmEllOaBTZCTgRUWnV7FEy0wNQMFTVuqoBGWWihS1BVCPayFIic4FQMMFqvhKryCnZYKFTW1cBSewyUocRJTNNAAb2ECbkO1pQJFvgy6YRxGoQXcZJABkgVOI8AAuRI4BzrYT+hwaiNEzTb4CjLcC8WWyjRAshoanE7SwCDUWV6X/gfoYDehxqkNEfkiuGX1X6DNUq4CDOyCTqfjGhiBOBQQnwmXQQfT7DeDxjiky+Id8As0Rleu0NKu/AZIVsBd2G3JShiAWnWJb4TvoINdg1kgY6sgeVlNxMrhHqh+GNZbKqk0A50gt56B2dAOOolOpvung41Bs0r4rYPz4AzxpD5o9qoXZ8Bd+X6lGXhkxZ6BGJSqSWwrfAMtvh7QYpSxffDAqfeJmB47b/ZD0GSpVKUZ8Ny6Bkz0dWtuWE6PUTMortk/gYdWOiliWkt/QWO6wJlIhnI0sB28lX8BYqDZHwadJMUAfRnzruYILLFUprIZoF0K/oW0weKV8MzikwZoi73wB3S7ToH72g1SlAF+NUtdyt8WPwsxy9XAG4v7DcyHQYvr3i+wVLCyGNDK9y7le1jjDEK0wwwcAs1et+aEhcMVZgDU3+GLaSFNPuu0MwzwOxe0OSmmvWKxUxylCAPzYMD672CZDXFEP9VArEixBOgdIY6Au6dEKcLAHtAiUv8kpLzp6KcYgDnw0fovod5KoxVi4CA8tvYnWGjlkyLmN3Afjllbpg9YWXaFGHgN3mN0HFI3EETMb0DPujf7p7DIyrIrxIDHB3C24XQR9xvwsx+y33tPaQa0X4vPoJdMO6ioEFJeJsT13aDPK2+MFuppqLKS3JRmoM1oBX12eV9GyyHlkSJXDNoTvDH60Cy3dO7yGwiUuyNegUaLTK8iDcQTYh0MQSOU54FWCDVQBD2gv2b6C9WdB65DqAHvozToz+R0E2hAl6gfXuSfRP8/Z7Zo0l9+oawAAAAASUVORK5CYII=" InformativeScreenshot="1d4d178c5bc433ae6b6cbe89b2be9dd2.png" Selector="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcOutrosPagamentos' title='Solicitação de Outros Pagamentos - 24/10/2023  11:33:19' /&gt;" Title="Solicitação de Outros Pagamentos - 24/10/2023  11:33:19" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: NewCon" sap:VirtualizedContainerService.HintSize="628,2278" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="b9415150-7685-44c9-a0ed-734fee413fad" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="594,1985" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Int32" Name="count">
+                  <Variable.Default>
+                    <Literal x:TypeArguments="x:Int32" />
+                  </Variable.Default>
+                </Variable>
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Aprovação de Pagamento'" sap:VirtualizedContainerService.HintSize="532,158" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9415150-7685-44c9-a0ed-734fee413fad" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CvTextArgument="Aprovacao de Pagamento" CvType="Text" DesignTimeRectangle="74, 355, 145, 22" DesignTimeScaleFactor="1" FriendlyName="'Aprovação de Pagamento'" FullSelectorArgument="&lt;wnd cls='TTabSheet' title='tshMenuView' /&gt;&lt;wnd cls='TTreeView' /&gt;&lt;ctrl name='Aprovação de Pagamento' role='outline item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TTabSheet' title='tshMenuView' /&gt;&lt;wnd cls='TTreeView' /&gt;&lt;ctrl name='Aprovação de Pagamento' role='outline item' automationid='' check:text='Aprovação de Pagamento' /&gt;" Guid="4386f366-537d-4e71-ad07-4c2deb50a7fc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJUAAAAaCAYAAAC+RB5CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMSSURBVGhD7Zg9UvMwEIZzKRoOwQmo3XKFnCCTK6Snpk/HHaiY4R76tCut/Gr1g8yngRj2mfFgRfvv13bCwRnGZExUxnRMVMZ0TFTGdExUxnRMVMZ0TFTGdHYvqrfLkzvcPbjlGs7vLx9xx/gpOqJ6dcvdkzu/x+VN8uHOjyf3wn8fvLjo/H8JsUikw7w/u3svbBI3HrsXOPe1faZtUV1Pbjme/uCd/1VR6eHv4ab8hLmiosHSQPxgHp/dW/w0DOrkzvGVc8ChUQH+qbFkTwyylzs3fsZ2GFNy+VNuQuz1hcVYKu+QT284YBd7WOMMxKgOX4lztE7OP9JfnNvllPb4AeAfBtk60eiD4vvrcT7KnuSo2Q/MwlMXVUxEF/7FJysGLKLgBmLw2DwOi3xTY2TLfiAiIuWi2HqYUri6QClWz6eVv6Swgz5wj7+/HV/5PEPlZfgzqW1jnUN+YSapHt7T63qOrI/oV53TZ3U25lkVVfaFl5zTIIOoVuGAQFQBwVavgy3Gb3+5Bv8idgvM2c6fo+1QwNpH20bihZE7XQ68wXIwTi1/rU4CbbWdXmPteE5AHD1bXGd7uk4dc6UiqjDUfEAYOA9E6uXh9YpjoGnaY5WXA6R4Rd5kX6fp08qPFHbQE/eLsekYi1FjrLfBmRR2eo3XqtOHrh3XrXOmMU9PKaqiST3kRiNFUrLVa/GNflfMFRpPd3e3IaHj082PaDuqDfut5VU06xO21IkXq+enL6peky/GadSna8d1t06Mn1OIil5HqQkhvQJDk+l12Hn/EiTG1juY3+s+VtqvNidF44X2iG3Xp58fKezgQg7F0HVottYpe12/LaLq9FHNEddqb3SehajC/300UmD4uxwbv/6wOCaKkA+1lw0oIELjo/srbPUb96n1JQTRbsmbUe09Z7jOo/8lBuJo+20TVbMPXXu2lrnIemye1S/qbXSh34xveJE75bcyINBbZ1+i8vCdm36N/gbgKamfIjtlo6h+knX462vDuEV2JCpjL5iojOmYqIzpmKiM6ZiojOmYqIzJOPcPnz66aRrxf9EAAAAASUVORK5CYII=" InformativeScreenshot="f5e0c6ec39f01f86a003c9e50bb77a51.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmMain' title='NewCon' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '0000003375'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="532,219" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="b9415150-7685-44c9-a0ed-734fee413fad" Text="0000003375" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CvElementArea="58, 39, 83, 23" CvTextArea="61, 43, 61, 11" CvTextArgument="0000003375" CvType="InputBox" DesignTimeRectangle="59, 39, 82, 22" DesignTimeScaleFactor="1" FriendlyName="'0000003375'" FullSelectorArgument="&lt;wnd cls='TEditPlusButton' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TEditPlusButton' check:text='0000003375' /&gt;" Guid="1b6b80ae-4947-4d59-bb6c-ae33436a37f7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFYAAAAaCAYAAAAtzKvgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE6SURBVGhD7ZThDYMgEEaZi4EYwimYxmVYwg2oR+GEKoEqV9Lke8n98Kue1weitm3zqPEFsULFYpdlQQ2oS7HgGRArBMQKAbFCQKwQfWJX45VSocwaM2JSvpp31pM7qzlLpa0Lv+X3K2V8/uqndIhdvVHah1mc9ZoHmJSTbLZJ9zTynKK/81bH/gK0xdIw2u5jhItjmFl5QUVgJacdyu6p/+WzY2iLLXZCNtysPJI+8Twjanm5UDvUf18snY6C0wPP+Fuxid6crtPZyjjHomlBrvrcpS121Cc8Kv+AhJyE7ZR57cg4qPW5S1tsGCr7szzgpPzODqfneZEiH/f/fscSNEQ8i4qXT8pJWsrzXVbLQ5+i8Zvq/QPoEwu+BmKFgFghIFYIiBUCYoWAWCGqYlHP6yQWNbYgVqQ2/wLrUXEvtz3PngAAAABJRU5ErkJggg==" InformativeScreenshot="34ae26a00103af72b191504cfd42c67a.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcAprovacaoPagamento' title='Aprovação de Pagamento - 24/10/2023  13:21:14' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Selecionar Todos'" sap:VirtualizedContainerService.HintSize="532,158" sap2010:WorkflowViewState.IdRef="NClick_61" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9415150-7685-44c9-a0ed-734fee413fad" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CvTextArgument="Selecionar Todos" CvType="Text" DesignTimeRectangle="359, 200, 106, 17" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Selecionar Todos'" FullSelectorArgument="&lt;wnd cls='TGroupBox' title=' Selecione os Tipos de Pagamento: ' /&gt;&lt;wnd cls='TCheckBox' title='Selecionar Todos' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TGroupBox' title=' Selecione os Tipos de Pagamento: ' /&gt;&lt;wnd cls='TCheckBox' title='Selecionar Todos' check:fulltext='Selecionar Todos' /&gt;" Guid="a189ee06-7d81-4fea-8053-753dee79ce6c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAVCAYAAACnvtv5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVGhD7ZbRjcMgDIazQYeplBk6Rt47SIbJAp0iQ3SCPPWVwySmv8EkoeVyFwmkX2mNweDPbtpM02SqzqcK7qQqAu5yudTnLzzXVDvun2oLngd3vV6zxWv3VEhVWQlwOQPBVZVXVsflDLXjhs40TePVDe9AqsbetG1vRm1uTZ+uyxXFgfu81Zp+VPyFRtO3O3LwobLAPZ9Pc7vdzOPxiDvOXbIzg/i+ccGjABTQ2Lem7Ud1Ttd34Ip1HEO73+/m9XrFHbcFAbuxG2YbrtHm2YftXBiwjhLK63xiab7rTMfrYD/0l+ew/jbRPkagEJwaF+3LfgxO95/havtsaRe4EBqNqOOsho4PEVweAS1+7kJsT81Pg03+u2vd5SnZuM7HAt/IHgOP7Bu/DgLcnrjuM9xT86di9UUF57HK6jj6CSRABIqHBo1G1HHL51l0CAAYvPt8ddGFKJFb82JvK1wH3RQVhLNTVQMUl0SOAwnX4oAEuERc4QP2lL84C8zvkQBHYAgQw0tBo6F1XCh/keDgXgkA0XzKnguO/FOd8hfglu8u/gKQ7dnvOISXgkYj6jiRFBK8nN3BuOoDOyUsNY/JpT0pBvv7dVsgAnCcQHdezV+XgLIWV9jx/rE/7RkCRfBrUt9xDC8FjYbWce4g3PpW4hAuUcHPAiZMm2cftvPlYR3G5GoV+yK4JZlzjPnPiygg568r7CY1rrBb/8SfE/QnWGx3RbnYsztu74g6bvlcdYyKgKsqr6yOyxWvrR13vDy4b8Xw6rPsM6Vi4KqOVQV3UlVwp9RkfgDJZap3Trn+4AAAAABJRU5ErkJggg==" InformativeScreenshot="0e58ae73ba5c829671657c75c0aa97a2.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcAprovacaoPagamento' title='Aprovação de Pagamento - 24/10/2023  15:03:55' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TEdit'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="532,219" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="b9415150-7685-44c9-a0ed-734fee413fad" Text="Ci15ro04an99%" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CvType="InputBox" DesignTimeRectangle="59, 65, 165, 22" DesignTimeScaleFactor="1" FriendlyName="'TEdit'" FullSelectorArgument="&lt;wnd cls='TEdit' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TEdit' /&gt;" Guid="9520b100-dfb0-4042-8006-06ecbf50c794" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKkAAAAaCAYAAADMi3z0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABsSURBVHhe7dKxEYBADMAw5s7U2eDpaIDehXTnDXzt7pHKmVT5nklnRkr1OSlUmJQ8k5JnUvJMSp5JyTMpeSYlz6TkmZQ8k5JnUvJMSp5JyTMpeSYlz6TkmZQ8k5JnUvJ+J5VKvSaVqplU8fbczvCgLsI/K4QAAAAASUVORK5CYII=" InformativeScreenshot="6a347282bf5ecb38833450c4b84287c1.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcAprovacaoPagamento' title='Aprovação de Pagamento - 24/10/2023  13:21:14' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="532,560" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                <ui:InterruptibleDoWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,392" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Line down'" sap:VirtualizedContainerService.HintSize="434,158" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9415150-7685-44c9-a0ed-734fee413fad" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="676, 179, 17, 17" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Line down'" FullSelectorArgument="&lt;wnd cls='TGroupBox' title=' Selecione os Tipos de Pagamento: ' /&gt;&lt;wnd cls='TDBGridCheckBox' /&gt;&lt;ctrl automationid='NonClientVerticalScrollBar' /&gt;&lt;ctrl automationid='DownButton' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TGroupBox' title=' Selecione os Tipos de Pagamento: ' /&gt;&lt;wnd cls='TDBGridCheckBox' /&gt;&lt;ctrl automationid='NonClientVerticalScrollBar' /&gt;&lt;ctrl automationid='DownButton' role='push button' check:text='Line down' /&gt;" Guid="c6f843bc-c8ab-44c8-b679-94b27371d7e4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABwSURBVDhP7ZHRCcAgEMU6qvuVfrmYGygRhXIVfVIpFAxE9JB86BFCiBX2b4Tz8nFHd7RgL80Kw6hz7jHrzUGK2kBrVgU5WiP2bAXpTe+hXhBB/igliCBHcRREmIoqws+ieVdoXZwRvomuIEdZ1upjAtyqWtj8PC7qAAAAAElFTkSuQmCC" InformativeScreenshot="67ca5d526e29b7e10c0d3405e22ee8a6.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcAprovacaoPagamento' title='Aprovação de Pagamento - 24/10/2023  14:33:13' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[count +1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:InterruptibleDoWhile.Body>
+                <ui:InterruptibleDoWhile.Condition>
+                  <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="count &lt; 30" />
+                </ui:InterruptibleDoWhile.Condition>
+              </ui:InterruptibleDoWhile>
+              <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Double-click 'client'" sap:VirtualizedContainerService.HintSize="532,158" sap2010:WorkflowViewState.IdRef="NClick_30" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9415150-7685-44c9-a0ed-734fee413fad" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="361, 118, 315, 78" DesignTimeScaleFactor="1" FriendlyName="'client'" FullSelectorArgument="&lt;wnd cls='TGroupBox' title=' Selecione os Tipos de Pagamento: ' /&gt;&lt;wnd cls='TDBGridCheckBox' /&gt;&lt;ctrl role='client' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TGroupBox' title=' Selecione os Tipos de Pagamento: ' /&gt;&lt;wnd cls='TDBGridCheckBox' /&gt;&lt;ctrl role='client' automationid='' /&gt;" Guid="f3d7f063-f0e3-45cb-80a7-394ee4b76162" ImageBase64="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" InformativeScreenshot="4ba27a84414900f8666220ce534dd83f.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcAprovacaoPagamento' title='Aprovação de Pagamento - 24/10/2023  14:33:13' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset Position="BottomLeft" X="78" Y="-12" />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Selecionar'" sap:VirtualizedContainerService.HintSize="532,158" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9415150-7685-44c9-a0ed-734fee413fad" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CvElementArea="498, 232, 75, 25" CvTextArea="509, 238, 53, 11" CvTextArgument="Selecionar" CvType="Button" DesignTimeRectangle="498, 232, 75, 25" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Selecionar'" FullSelectorArgument="&lt;wnd cls='TButton' title='Selecionar' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TButton' title='Selecionar' check:text='Selecionar' /&gt;" Guid="f19db9aa-1601-42b1-8781-d676fb5cf308" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAdCAYAAADrcjF6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGDSURBVGhD7ZXbccQgDEXdE93QDK3QwBZBKe7AHRCDLXx5mV2LnWQm+jgf0WMRx7KzbNvmhWeIPAYij0Em7/V6CQPQVyVvXVehg8hjIPIYiDwGIo+ByGMwV57VflmWhLaNGsQZr5TxrpW742nfZObJCxdatLfZ38obBzUlf0TCU+bKuxOBW6ntEcOeVp5qKE4PB/qcUalPGXf1aO019cHvYX0+x16vQhwWYMA8eTtWn0OVA6Cksy6+0hTv5Ve7C7i2N148XBj70llQW8Vr6VV89JY0mCrvIgwGEotvYSBuCV1mlC9/H/tgq6qHEuPOGwVioig6B2S3zhnwJXkHYVOihOKSiY6EKt+LfyovPqTOpv6qvGywQBgaLpNeiyIehu7l8YJ0BtWnvpGMQh7JjvO26t9n6uZlH2N69Sgfhz1zdAEcupWnGorjN+rswzMP4Xk+k5c+J+GM4x9KvanvM1Xef0PkMRB5DEQeA5HHQOQxEHkMhvKEe9BXJk/4DJHHQOQ9ZvM/s8QxZGp/UgwAAAAASUVORK5CYII=" InformativeScreenshot="594755de00dc2d565d5fc2476d946694.png" ScopeSelectorArgument="&lt;wnd app='cnp3.exe' cls='TfrmConCrPrcAprovacaoPagamento' title='Aprovação de Pagamento - 24/10/2023  14:33:13' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Newcon4_Funcional\cnp3.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANdSURBVFhHvZdLSBVRGMfz+tZKJYTCqBYZCS16aBAUWGTaJgrcCFFhcKlNbSIIghZdqE2baBFuClxEQRGZYERQ0AOsKHtIiwqCoJdKRWUP037/mW+8c++dmXsRb3/4cc/5vu/M/M/MmTlzZ2QoniiDPrjzH+izs/oUT1TAMEz8B0bsrD4lDYzBRejKA70wDpEGRmEllOaBTZCTgRUWnV7FEy0wNQMFTVuqoBGWWihS1BVCPayFIic4FQMMFqvhKryCnZYKFTW1cBSewyUocRJTNNAAb2ECbkO1pQJFvgy6YRxGoQXcZJABkgVOI8AAuRI4BzrYT+hwaiNEzTb4CjLcC8WWyjRAshoanE7SwCDUWV6X/gfoYDehxqkNEfkiuGX1X6DNUq4CDOyCTqfjGhiBOBQQnwmXQQfT7DeDxjiky+Id8As0Rleu0NKu/AZIVsBd2G3JShiAWnWJb4TvoINdg1kgY6sgeVlNxMrhHqh+GNZbKqk0A50gt56B2dAOOolOpvung41Bs0r4rYPz4AzxpD5o9qoXZ8Bd+X6lGXhkxZ6BGJSqSWwrfAMtvh7QYpSxffDAqfeJmB47b/ZD0GSpVKUZ8Ny6Bkz0dWtuWE6PUTMortk/gYdWOiliWkt/QWO6wJlIhnI0sB28lX8BYqDZHwadJMUAfRnzruYILLFUprIZoF0K/oW0weKV8MzikwZoi73wB3S7ToH72g1SlAF+NUtdyt8WPwsxy9XAG4v7DcyHQYvr3i+wVLCyGNDK9y7le1jjDEK0wwwcAs1et+aEhcMVZgDU3+GLaSFNPuu0MwzwOxe0OSmmvWKxUxylCAPzYMD672CZDXFEP9VArEixBOgdIY6Au6dEKcLAHtAiUv8kpLzp6KcYgDnw0fovod5KoxVi4CA8tvYnWGjlkyLmN3Afjllbpg9YWXaFGHgN3mN0HFI3EETMb0DPujf7p7DIyrIrxIDHB3C24XQR9xvwsx+y33tPaQa0X4vPoJdMO6ioEFJeJsT13aDPK2+MFuppqLKS3JRmoM1oBX12eV9GyyHlkSJXDNoTvDH60Cy3dO7yGwiUuyNegUaLTK8iDcQTYh0MQSOU54FWCDVQBD2gv2b6C9WdB65DqAHvozToz+R0E2hAl6gfXuSfRP8/Z7Zo0l9+oawAAAAASUVORK5CYII=" InformativeScreenshot="10fe56a03ed294ac72809e76c4917fec.png" Selector="&lt;wnd app='cnp3.exe' cls='TfrmMain' title='NewCon' /&gt;" Title="NewCon" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
